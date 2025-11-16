@@ -11,12 +11,12 @@ eclean \- A cleaning tool for Gentoo distfiles and binary packages.
 .LP
 .B eclean(\-dist,\-pkg) \fR[\fI\-\-help, \-\-version\fR]
 .SH "DESCRIPTION"
-\fBeclean\fP is small tool to remove obsolete portage sources files and binary packages.
-Used on a regular basis, it prevents your DISTDIR and PKGDIR directories to
-infinitely grow, while not deleting files which may still be useful.
+\fBeclean\fP is a small tool to remove obsolete Portage sources files and binary packages.
+Used on a regular basis, it prevents your DISTDIR and PKGDIR directories from
+infinitely growing, while not deleting files which may still be useful.
 .PP
 By default, eclean will protect all distfiles or binary packages corresponding to some
-ebuilds available in the Portage tree.  This is the safest mode, since it will protect
+ebuilds available in the ebuild repository.  This is the safest mode, since it will protect
 whatever may still be useful, for instance to downgrade a package without downloading
 its sources for the second time, or to reinstall a package you unmerge by mistake
 without recompiling it.  Sure, it's also a mode in which your DISTDIR and PKGDIR will
